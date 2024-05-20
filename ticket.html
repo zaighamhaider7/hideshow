@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="outer">
+            <div id="form">
+                <input type="text" placeholder="Enter Your Name" id="frstname">
+                <input type="text" placeholder="Enter Your Father Name" id="fathername">
+                <input type="text" placeholder="Enter Your Last Degree" id="degree">
+                <div id="age">
+                    <span>
+                        <input type="number" placeholder="Enter Your Age" class="gender" id="age">
+                    </span>
+                <span>
+                    <input type="text" placeholder="Enter Your Gender" class="gender" id="gender">
+                </span>
+                </div>
+                <input type="submit" id="submit">
+            </div>
+                
+        
+        </div>
+        <div class="cardouter">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./download-removebg-preview.png" alt="logo" height="150px"
+                    width="auto">
+                </div>
+                <div class="card-content">
+                    <h2 id="name">
+    
+                    </h2>
+                    <h2 id="f-name">
+    
+                    </h2>
+                    <h2 id="last-degree">
+    
+                    </h2>
+                    <div id="h2-age">
+                        <h2 id="h2-Age" class="h2-gender">
+    
+                        </h2>
+                        <h2 id="h2-gender" class="h2-gender">
+        
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(
+            function(){
+                $("#submit").click(
+                    function(){
+                        $('.cardouter').show();
+                        $('.outer').hide()
+                    }
+                )
+            }
+        )
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

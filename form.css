@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+}
+#myinput{
+    position: relative;
+    background-color: aqua;
+    height: 2rem;
+    width: 18em;
+    border: none;
+    outline: none;
+}
+#myinput:focus{
+       outline: 4px solid red;
+}
+.menu{
+    background-image: url(./close\ eye.png);
+    background-repeat: no-repeat;
+    height: 3em;
+    width: 3em;
+    transition: 0.5s;
+    position: absolute;
+    /* top: 51%;
+    right: 39%; */
+    top: 0%;
+}
+/* .menu:active{
+    transform: rotate(360deg);
+} */
+.cross{
+    background-image: url(./icons8-eye-24.png);
+    background-repeat: no-repeat;
+}
+/* .cross:active{
+    transform: rotate(360deg);
+} */
